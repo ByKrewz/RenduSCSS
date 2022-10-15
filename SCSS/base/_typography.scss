@@ -1,0 +1,20 @@
+@use '../abstracts';
+h1{
+    font-size: 3rem;
+    @include abstracts.breakpoint(600px){
+        font-size: 1.5rem;
+    }
+}
+h2{
+    font-size: 2.5rem;
+    @include abstracts.breakpoint(600px){
+        font-size: 1rem;
+    }
+}
+
+a{
+    font-size: 1.5rem;
+    @include abstracts.breakpoint(600px){
+        font-size: 1rem;
+    }
+}

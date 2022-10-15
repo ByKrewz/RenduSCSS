@@ -1,0 +1,30 @@
+@use '../abstracts';
+@keyframes nav-pin {
+    from{
+        width: 50%;
+        border-radius: 50px;
+        border: 2px solid abstracts.$color-a;
+    }99%{
+        border: 2px solid abstracts.$color-a;
+    }to{
+        width: 100%;
+        border-radius: 0px;
+        border: none;
+        border-bottom: 2px solid abstracts.$color-a;
+    }
+}
+
+@keyframes nav-unpin {
+    from{
+        width: 100%;
+        border-radius: 0px;
+        border: none;
+        border-bottom: 2px solid abstracts.$color-a;
+    
+    }1%{
+        border: 2px solid abstracts.$color-a;
+    }to{
+        width: 50%;
+        border-radius: 50px;
+    }
+}

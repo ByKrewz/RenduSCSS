@@ -1,0 +1,8 @@
+@use '../abstracts';
+header{
+    @include abstracts.flexdef;
+    width: 100%;
+    height: 15vh;
+    position: sticky;
+    top: -47px;
+}
