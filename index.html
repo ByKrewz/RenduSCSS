@@ -5,25 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300&display=swap" rel="stylesheet">
     <title>Musée des Arts Forains</title>
 </head>
 <body>
+
+    <div class="divtitle">
+        <div class="lisibility">
+            <h1 id="h1Index">Musée des Arts Forains</h1>
+        </div>
+    </div>
+
     <header>
         <nav class="load">
             <ul>
-                <li><a class=".button" href="./index.html">Accueil</a></li>
-                <li><a class=".button" href="./sources.html">Sources</a></li>
-                <li><a class=".button" href="https://arts-forains.com/">Site officiel</a></li>
+                <li><a class="button-nav" href="./index.html">Accueil</a></li>
+                <li><a class="button-nav" href="./sources.html">Sources</a></li>
+                <li><a class="button-nav" href="https://arts-forains.com/">Site officiel</a></li>
             </ul>
         </nav>
     </header>
-    <div class="divtitle"><h1>Musée des Arts Forains</h1></div>
     <section class="first-section grid">
-        <div class="sec-left"></div>
-        <div class="sec-mid"></div>
-        <div class="sec-right"></div>
-
+        <div class="sec-left"><img src="./img/1.png" id="t1" alt="trapèziste"></div>
+        <div class="sec-mid">
+            <div class="presentation">
+                <h2>Présentation</h2>
+                <p>Le musée des Arts forains présente une collection d’objets du spectacle du 19e siècle et du 20e siècle. Le musée est un lieu de 11 400 m2 à peu de distance du parc de Bercy et du centre commercial Bercy Village. Le Musée des arts forains présente la seule exposition d’éléments d'art forain privée ouverte au public en France. Composé de deux parties, l’exposition temporaire et l’exposition permanente. L'espace possède 4 salles réservable pour y organiser différents événements.</p>
+            </div>
+            <div class="room">
+                <h3>Les salles</h3>
+                <div class="grid-room">
+                    <div class="article">
+                        <h4>Musée des arts forains</h4>
+                        <img src="./img/salle3.png" alt="salle musée des arts forains">
+                    </div>
+                    <div class="article">
+                        <h4>Salons vénitiens</h4>
+                        <img src="./img/salle4.png" alt="salle salons vénitiens">
+                    </div>
+                    <div class="article">
+                        <h4>Théâtre du merveilleux</h4>
+                        <img src="./img/salle2.png" alt="salle théâtre du merveilleux">
+                    </div>
+                    <div class="article">
+                        <h4>Magic mirror</h4>
+                        <img src="./img/salle1.png" alt="salle magic mirror">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sec-right"><img src="./img/2.png" id="t2" alt="trapèziste"></div>
     </section>
+    <footer>
+        <div class="footersec disclaimer">
+            <h5>Disclaimer :</h5>
+            <p>
+                Ce site n'a pas été conçu à des fins commerciales, mais uniquement pour illustrer des compétences. Retrouvez <a href="https://arts-forains.com/">ici</a> le site officiel du musée.
+            </p>
+        </div>
+        <div class="footersec contact">
+            <h5>Contact :</h5>
+            <ul>
+                <li>+33 (0)1 43 40 16 22</li>
+                <li>infos@pavillons-de-bercy.com</li>
+            </ul>
+        </div>
+        <div class="footersec map">
+            <h5>Venir sur place :</h5>
+            <p>Adresse : 53 Av. des Terroirs de France, 75012 Paris</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8833.93830900538!2d2.387539278542149!3d48.83254674215789!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3b31b5b4616f253d!2sLes%20Pavillons%20de%20Bercy%20-%20Mus%C3%A9e%20des%20Arts%20Forains!5e0!3m2!1sfr!2sfr!4v1665921461378!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
     <script src="./Scrpits/nav.js"></script>
 </body>
 </html>

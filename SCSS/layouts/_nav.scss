@@ -6,7 +6,7 @@ nav{
     height: 10vh;
     position: sticky;
     top: 0;
-    background-color: abstracts.$color-b;
+    background-color: rgba($color: abstracts.$color-b, $alpha: .8);
     border: 2px solid abstracts.$color-a;
     border-radius: 50px;
     @include abstracts.breakpoint(900px){
@@ -31,6 +31,7 @@ nav ul{
     border-radius: 0px;
     border: none;
     border-bottom: 2px solid abstracts.$color-a;
+    background-color: abstracts.$color-b;
 }
 
 

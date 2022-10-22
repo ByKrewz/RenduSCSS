@@ -1,0 +1,18 @@
+@use '../abstracts';
+
+.article{
+    @include abstracts.flexdef(10px);
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+    // border: solid 2px abstracts.$color-e;
+    padding: 20px;
+    @include abstracts.breakpoint(900px){
+        img{
+            width: 80%;
+            height: auto;
+        }
+        padding: 10px;
+    }
+}

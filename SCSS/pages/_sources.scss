@@ -1,0 +1,27 @@
+@use '../abstracts';
+.coverall{
+    background-color: abstracts.$color-d;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+.fullcontentsources{
+    @include abstracts.flexdef(50px);
+    flex-direction: column;
+
+    text-align: center;
+    h1, h2{
+        color: abstracts.$color-c;
+    }
+    section ul a{
+        color: abstracts.$color-e;
+    }
+    section ul a:hover{
+        color: abstracts.$color-f;
+    }
+}

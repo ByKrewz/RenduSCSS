@@ -1,4 +1,16 @@
 @use '../abstracts';
-.button{
+.button-nav{
+    color: abstracts.$color-c;
+    padding: 10px;
+    border-radius: 50px;
+    border: solid 2px abstracts.$color-c;
+    @include abstracts.breakpoint(600px){
+        padding: 5px;
+        border: solid 1px abstracts.$color-c;
+    }
+}
 
+.button-nav:hover{
+    border: solid 2px abstracts.$color-e;
+    color: abstracts.$color-e;
 }

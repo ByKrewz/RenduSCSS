@@ -1,20 +1,40 @@
 @use '../abstracts';
+
+*{
+    font-family: 'Crimson Pro', serif;
+    text-decoration: none;
+    list-style: none;
+}
+
 h1{
     font-size: 3rem;
+    @include abstracts.breakpoint(900px){
+        font-size: 2rem;
+    }
     @include abstracts.breakpoint(600px){
         font-size: 1.5rem;
     }
 }
-h2{
+h2, h3{
     font-size: 2.5rem;
+    @include abstracts.breakpoint(900px){
+        font-size: 1.5rem;
+    }
     @include abstracts.breakpoint(600px){
         font-size: 1rem;
     }
 }
 
-a{
+a, p, h4, h5, li{
     font-size: 1.5rem;
+    @include abstracts.breakpoint(900px){
+        font-size: 1.3rem;
+    }
     @include abstracts.breakpoint(600px){
         font-size: 1rem;
     }
+}
+
+p{
+    text-align: justify;
 }

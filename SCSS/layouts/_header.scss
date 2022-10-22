@@ -2,7 +2,7 @@
 header{
     @include abstracts.flexdef;
     width: 100%;
-    height: 15vh;
     position: sticky;
-    top: -47px;
+    margin-bottom: 10vh;
+    top: -1px ;
 }

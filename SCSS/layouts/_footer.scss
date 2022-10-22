@@ -1,0 +1,40 @@
+@use '../abstracts';
+
+footer{
+    height: 50vh;
+    width: 100%;
+    background-color: abstracts.$color-c;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    @include abstracts.flexdef;
+    p, h5, li{
+        color: abstracts.$color-d;
+    }
+    iframe{
+        width: 60%;
+        height: 60%;
+        @include abstracts.breakpoint(600px){
+            width: 80%;
+        }
+    }
+    a{
+        color: abstracts.$color-f;
+    }
+    .footersec{
+        @include abstracts.flexdef(20px);
+        flex-direction: column;
+        width: 30%;
+        height: 100%;
+        justify-content: flex-start;
+        padding: 50px 0 50px 0;
+    }
+    @include abstracts.breakpoint(600px){
+        flex-direction: column;
+        height: auto;
+        gap: 50px;
+        .footersec{
+            gap: 5px;
+            width: 90%;
+        }
+    }
+}

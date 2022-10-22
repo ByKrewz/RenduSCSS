@@ -1,9 +1,15 @@
 @use '../abstracts';
 @keyframes nav-pin {
     from{
+        @include abstracts.breakpoint(900px){
+            width: 80%;
+        }
         width: 50%;
         border-radius: 50px;
         border: 2px solid abstracts.$color-a;
+        background-color: rgba($color: abstracts.$color-b, $alpha: .8);
+    }40%{
+        background-color: abstracts.$color-b;
     }99%{
         border: 2px solid abstracts.$color-a;
     }to{
@@ -20,11 +26,35 @@
         border-radius: 0px;
         border: none;
         border-bottom: 2px solid abstracts.$color-a;
+        background-color: abstracts.$color-b;
     
     }1%{
         border: 2px solid abstracts.$color-a;
     }to{
+        @include abstracts.breakpoint(900px){
+            width: 80%;
+        }
         width: 50%;
         border-radius: 50px;
+        background-color: rgba($color: abstracts.$color-b, $alpha: .8);
+    }
+}
+
+@keyframes t1{
+    from{
+        transform: rotate(0deg);
+    }50%{
+        transform: rotate(30deg);
+    }to{
+        transform: rotate(0deg);
+    }
+}
+@keyframes t2{
+    from{
+        transform: rotate(0deg);
+    }50%{
+        transform: rotate(-35deg);
+    }to{
+        transform: rotate(0deg);
     }
 }

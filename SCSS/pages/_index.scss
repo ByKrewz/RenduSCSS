@@ -1,23 +1,86 @@
 @use '../abstracts';
+@use '../components';
+@use '../base';
+
 .divtitle{
     @include abstracts.flexdef;
     width: 100%;
-    height: 20vh;
+    height: 40vh;
     flex-direction: column;
 }
 
 .first-section{
     width: 100%;
-    height: 90vh;
+    height: auto;
     background-color: abstracts.$color-d;
 }
 
 .sec-left, .sec-mid, .sec-right{
     width: 100%;
     height: 100%;
+    color: abstracts.$color-c;
+    padding: 100px 10px 100px 10px ;
+    @include abstracts.flexdef;
+    
+    
+}
+
+.sec-left, .sec-right{
+    img{
+        position: sticky;
+        top: 50%;
+    }
+}
+
+.sec-mid{
+    @include abstracts.flexdef(40px);
+    flex-direction: column;
+}
+
+.presentation{
+    @include abstracts.flexdef(40px);
+    flex-direction: column;
 }
 
 
+#h1Index{
+    color: abstracts.$color-b;
+}
+
+#t1,#t2{
+    width: 100%;
+    height: auto;
+}
+
+#t1{
+    transform-origin: top left;
+    animation: t1 3s infinite ease-in-out;
+}
+#t2{
+    transform-origin: top right;
+    animation: t2 3s infinite ease-in-out;
+}
+
+.lisibility{
+    @include abstracts.flexdef;
+    background-color: rgba($color: abstracts.$color-a, $alpha: .8);
+    border: solid 2px abstracts.$color-b;
+    width: 50%;
+    height: 15vh;
+    @include abstracts.breakpoint(600px){
+        width: 80%;
+    }
+}
+
 body{
+    background-image: url('../img/back.jpg');
     background-color: abstracts.$color-c;
+    background-attachment: fixed;
+    background-position: 50% 0%;
+    overflow-x: hidden;
+}
+
+.room{
+    @include abstracts.flexdef(40px);
+    flex-direction: column;
 }
